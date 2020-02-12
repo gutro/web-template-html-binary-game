@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webserver 8080"
+    "print-help": "echo 'Open Chrome like this:\n\nopen \"/Applications/Google Chrome.app\" --args --disable-web-security --user-data-dir=\"$TMPDIR/testing-launcher\" \"http://localhost:8080/testing-launcher.html\"\n\n'",
+    "test": "npm run print-help && webserver 8080"
   },
   "author": "",
   "license": "ISC",
